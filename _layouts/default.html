@@ -52,12 +52,10 @@
   <main id="content" class="main-content" role="main">
     {{ content }}
 
-    {{ site.github }}
-
     {% for item in site.github.releases %}
-    <h6>版本：{{ item.tag_name }}</h6>
-    <h6>更新時間: {{ item.published_at | date: "%Y-%m-%d" }}</h6>
-    <h6>更新說明: {{ item.body }}</h6>
+    <h4>版本：{{ item.tag_name }}</h4>
+    <h4>更新時間: {{ item.published_at | date: "%Y-%m-%d" }}</h4>
+    <h4>更新說明: {{ item.body }}</h4>
     {% for asset in item.assets %}
     <p><a href="{{ asset.browser_download_url }}" target="_blank">點擊下載{{ item.name }}</a></p>
     {% endfor %}

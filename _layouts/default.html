@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+  <meta charset="UTF-8">
+
+  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <style>
+    .page-header {
+      color: #fff;
+      text-align: center;
+      background-color: #159957;
+      background-image: linear-gradient(120deg, #355C7D, #6C5B7B, #C06C84);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
+
+  <header class="page-header" role="banner">
+    <h1 class="project-name">{{ site.title | default: page.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">
+      {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    {% if site.github.is_project_page %}
+    <a href="{{ site.github.web_site }}" target="_blank" class="btn">訪問最新域名</a>
+    {% endif %}
+    {% if site.show_downloads %}
+    <a href="{{ site.github.blog_site }}" target="_blank" class="btn">博客網站</a>
+    <a href="{{ site.github.download_site }}" target="_blank" class="btn">獨立下載網址</a>
+    {% endif %}
+
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    {{ content }}
+
+    {% for item in site.github.releases %}
+    <h6>版本：{{ item.tag_name }}</h6>
+    <h6>更新時間: {{ item.published_at | date: "%Y-%m-%d" }}</h6>
+    <h6>更新說明: {{ item.body }}</h6>
+    {% for asset in item.assets %}
+    <p><a href="{{ asset.browser_download_url }}" target="_blank">點擊下載{{ item.name }}</a></p>
+    {% endfor %}
+    {% endfor %}
+
+    <footer class="site-footer">
+      <span class="site-footer-credits">Copyright 熱辣漫畫 ©2019</span>
+    </footer>
+  </main>
+</body>
+
+</html>

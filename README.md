@@ -4,7 +4,7 @@
 
 ## 本站主要是收集一些熱辣漫畫的周邊信息的
 
-- 當前最新域名[點擊訪問](https://www.mrhotmangas.com/)
+- 當前最新域名[點擊訪問](https://www.mrhotmanga.com/)
 - 博客網址[點擊訪問](https://jileshucheng.com)
-- 獨立下載網址[點擊訪問](https://www.hotmangasa.com)
-- 最新信息頁[點擊訪問](https://xbxbxb007.github.io/xbxbxb007/)
+- 獨立下載網址[點擊訪問](http://www.hotmangasa.com)
+- 最新信息頁[點擊訪問](https://github.com/hotmanga/hotmangaSite)

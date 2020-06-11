@@ -10,3 +10,4 @@
 - 博客網址[點擊訪問](https://jileshucheng.com)
 - 獨立下載網址[點擊訪問](http://www.hotmangasa.com)
 - 最新信息頁[點擊訪問](https://github.com/hotmanga/hotmangaSite)
+- 推薦一個免費漫畫站[點擊訪問](https://copymanga.com/)

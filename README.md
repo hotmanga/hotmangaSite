@@ -10,7 +10,7 @@
 
 ## 本站主要是收集一些熱辣漫畫的周邊信息的
 
-- 當前最新域名[點擊訪問](https://www.manga2020.com/)
+- 當前最新域名[點擊訪問](https://www.manga2022.com/)
 - 獨立下載網址[點擊訪問](http://www.hotmangasa.com)
 - 最新信息頁[點擊訪問](https://github.com/hotmanga/hotmangaSite)
-- 推薦一個免費漫畫站[點擊訪問](https://copymanga.com/)
+- 推薦一個免費漫畫站[點擊訪問](https://copymanga.org/)
